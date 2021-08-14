@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    border-bottom: 2px solid white;
+}
+
+.start_test {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.my_name {
+    background-color: white;
+    padding: 2px;
+    border: 2px solid #696969;
+    border-radius: 3px;
+}
+
+.send {
+    background-color: white;
+    padding: 1px;
+    border: 2px solid #696969;
+    border-radius: 3px;
+}

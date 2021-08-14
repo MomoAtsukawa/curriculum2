@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.answers {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.result {
+    padding-bottom: 20px;
+}
