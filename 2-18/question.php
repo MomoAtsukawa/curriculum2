@@ -22,28 +22,25 @@
 
     <h2>①ネットワークのポート番号は何番？</h2>
     <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-    <?php foreach ($q1 as $value1) {
-       echo '<input type="radio" name="qes1" class="qes1" value="'.$value1.'">';
-       echo $value1;
-    }
-    ?>
+    <?php foreach($q1 as $value1): ?>
+   <input type="radio" name="qes1" class="qes1" value="<?php echo $value1?>" />
+   <?php echo $value1?>
+   <?php endforeach ?>
 
     <h2>②Webページを作成するための言語は？</h2>
     <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-    <?php foreach ($q2 as $value2) {
-       echo '<input type="radio" name="qes2" class="qes2" value="'.$value2.'">';
-       echo $value2;
-    }
-    ?>
+    <?php foreach($q2 as $value2): ?>
+   <input type="radio" name="qes2" class="qes2" value="<?php echo $value2?>" />
+   <?php echo $value2?>
+   <?php endforeach ?>
 
     <h2>③MySQLで情報を取得するためのコマンドは？</h2>
     <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-    <?php foreach ($q3 as $value3) {
-       echo '<input type="radio" name="qes3" class="qes3" value="'.$value3.'">';
-      echo $value3;
-    }
-    echo "<br>";
-?>
+    <?php foreach($q3 as $value3): ?>
+   <input type="radio" name="qes3" class="qes3" value="<?php echo $value3?>" />
+   <?php echo $value3?>
+   <?php endforeach ?>
+    
 
 <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
 <input type="hidden" name="a1" value="<?php echo $a1; ?>">
