@@ -1,17 +1,15 @@
 <?php
     // すごろく
     $number = 0;
-    for ($i = 1; $i <= 40;$i++) {
+    $i = 0;
+    while($number <= 40) {
         $num = mt_rand(1, 6);
         $number += $num;
+        ++$i;
         echo $i."回目=".$num;
         echo "<br>";
-        
-        if($number >= 40) {
-            echo "合計".$i."回でゴールしました";
-            break;
-        }
     } 
+    echo "合計".$i."回目でゴールしました";
     echo "<br>";
     echo "<br>";
 
@@ -21,11 +19,9 @@
     echo "今".$time."時台です";
     echo "<br>";
     intval($time);
-
-    if ($time == 4 || $time == 5 || $time == 6 || $time == 7 || $time == 8 ||
-    $time == 9 || $time == 10 || $time == 11) {
+    if ($time >= 5 && $time <= 10) {
        echo "おはようございます";
-   } elseif ($time == 12 || $time == 13 || $time == 14 || $time == 15 || $time == 16 || $time == 17){
+   } elseif ($time >= 11 && $time <= 17){
        echo "こんにちは";
    } else {
        echo "こんばんは";
