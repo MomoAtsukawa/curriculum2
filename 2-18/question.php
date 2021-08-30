@@ -20,31 +20,33 @@
 <form action="answer.php" method="post">
     <div class="tests">
 
-            <h2>①ネットワークのポート番号は何番？</h2>
-            <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-            <?php foreach($q1 as $value1): ?>
-        <input type="radio" name="qes1" class="qes1" value="<?php echo $value1?>" />
-        <?php echo $value1?>
+        <h2>①ネットワークのポート番号は何番？</h2>
+        <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+        <?php foreach($q1 as $value1): ?>
+            <input type="radio" name="qes1" class="qes1" value="<?php echo $value1?>" />
+            <?php echo $value1?>
         <?php endforeach ?>
 
-            <h2>②Webページを作成するための言語は？</h2>
-            <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-            <?php foreach($q2 as $value2): ?>
-        <input type="radio" name="qes2" class="qes2" value="<?php echo $value2?>" />
-        <?php echo $value2?>
+        <h2>②Webページを作成するための言語は？</h2>
+        <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+        <?php foreach($q2 as $value2): ?>
+            <input type="radio" name="qes2" class="qes2" value="<?php echo $value2?>" />
+            <?php echo $value2?>
         <?php endforeach ?>
 
-            <h2>③MySQLで情報を取得するためのコマンドは？</h2>
-            <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-            <?php foreach($q3 as $value3): ?>
-        <input type="radio" name="qes3" class="qes3" value="<?php echo $value3?>" />
-        <?php echo $value3?>
+        <h2>③MySQLで情報を取得するためのコマンドは？</h2>
+        <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+        <?php foreach($q3 as $value3): ?>
+            <input type="radio" name="qes3" class="qes3" value="<?php echo $value3?>" />
+            <?php echo $value3?>
         <?php endforeach ?>
+
+        <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
+        <input type="hidden" name="a1" value="<?php echo $a1; ?>">
+        <input type="hidden" name="a2" value="<?php echo $a2; ?>">
+        <input type="hidden" name="a3" value="<?php echo $a3; ?>"> 
+        <input type="hidden" name="my_name" value="<?php echo $my_name; ?>">
+        <input type="submit" value="回答する" class="respons">
     </div>
 </form>
-<!--問題の正解の変数と名前の変数を[answer.php]に送る-->
-<input type="hidden" name="a1" value="<?php echo $a1; ?>">
-<input type="hidden" name="a2" value="<?php echo $a2; ?>">
-<input type="hidden" name="a3" value="<?php echo $a3; ?>"> 
-<input type="hidden" name="my_name" value="<?php echo $my_name; ?>">
-<input type="submit" value="回答する" class="respons">
+
