@@ -1,5 +1,7 @@
 <?php
 
+include_once("dbconnect.php");
+
 // エラーメッセージ、登録完了メッセージの初期化
 $errorMessage = "";
 $signUpMessage = "";
@@ -19,7 +21,7 @@ if (isset($_POST["signUp"])) {
     }
 
     if (!empty($_POST["username"]) && !empty($_POST["password"]) && !empty($_POST["password2"]) && $_POST["password"] === $_POST["password2"]) {
-        require_once('dbconnect.php');
+
         // 入力したユーザIDとパスワードを格納
         $username = $_POST["username"];
         $password = $_POST["password"];
