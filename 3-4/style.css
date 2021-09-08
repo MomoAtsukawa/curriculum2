@@ -20,6 +20,7 @@
     width: 800px;
     height: 60px;
     background-color: #87ceeb;
+    line-height: 60px;
 }
 
 .right .time {
@@ -27,6 +28,7 @@
     width: 800px;
     height: 60px;
     background-color: #00ffff;
+    line-height: 60px;
 }
 
 /* main */

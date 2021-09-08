@@ -51,9 +51,9 @@
                         // var_dump($user->getPostData());
                         foreach ($post_info as $contents) {
                             if ($contents['category_no'] == 1 ){
-                                echo "<tr>"."<td>".$contents['id']."</td>"."<td>".$contents['title']."</td>"."<td>"."旅行"."</td>"."<td>".$contents['comment']."</td>"."<td>".$contents['created']."</td>"."</tr>";
-                            } else if ($contents['category_no'] == 2) {
                                 echo "<tr>"."<td>".$contents['id']."</td>"."<td>".$contents['title']."</td>"."<td>"."食事"."</td>"."<td>".$contents['comment']."</td>"."<td>".$contents['created']."</td>"."</tr>";
+                            } else if ($contents['category_no'] == 2) {
+                                echo "<tr>"."<td>".$contents['id']."</td>"."<td>".$contents['title']."</td>"."<td>"."旅行"."</td>"."<td>".$contents['comment']."</td>"."<td>".$contents['created']."</td>"."</tr>";
                             } else {
                                 echo "<tr>"."<td>".$contents['id']."</td>"."<td>".$contents['title']."</td>"."<td>"."その他"."</td>"."<td>".$contents['comment']."</td>"."<td>".$contents['created']."</td>"."</tr>";
                             }
